@@ -1,0 +1,172 @@
+body {
+  margin: 20px;
+  }
+
+/****************   Nav Section **********************/
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+	background-color: red;
+  font-family: Cambria, Georgia, “Times New Roman”, serif; 
+} 
+
+/***********************  Footer Section   **************************/
+.footer-flex {
+	display: flex;
+  justify-content: center;
+  background-color: orange;
+  color: white;
+  gap: 5px;
+  border: 2px dashed;
+}
+
+/*********** Splash Page ************************/
+header {
+  background-color: rgb(0, 255,21);
+  margin: .5em;
+  padding: 5px 0 10px 10px
+}
+.comic-relief-regular {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-relief-bold {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+header h1 {
+  color: white;
+  font-family: "Comic Relief", system-ui;
+  text-shadow: 2px 2px 10px rgb(65, 4, 4);
+}
+
+header img {
+  border: 5px double red;
+}
+
+.address {
+  font-family: "Papyrus", fantasy;
+  font-weight: bold;
+}
+
+.tagline {
+  font-family: "Brush Script MT", Brush Script Std, cursive;
+  font-size: 25px;
+}
+
+/************* Sections ********************/
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+hr {
+
+}
+
+section h3 {
+  font-family: "Press Start 2P", system-ui;
+  color: #31a3b9
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+}
+
+section ul {
+  list-style-type: circle;
+}
+
+section a {
+  color: rgb(0, 195, 255);
+  font-style: italic;
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: rgb(140, 0, 255);
+}
+
+a:active {
+  color: rgb(0, 195, 255);
+}
+
+section a:hover {
+  color: rgb(140, 0, 255);
+}
+
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  gap: 1.5em;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  border: 2px inset;
+  border-color: rgb(136, 211, 129);
+}
+
+.card {
+  padding: 2em;
+  box-shadow: 1px 3px 5px cyan;
+  border-radius: 15px;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  color: blueviolet;
+  background-color: yellow;
+  opacity: 0.9;
+  border: 2px dashed cadetblue
+}
+
+input {
+  width: 25%;
+  padding: 0.2em;
+  color: goldenrod;
+  border-radius: 5px;
+  border-width: .5px;
+}
+
+textarea {
+  width: 450px;
+  height: 200px;
+  padding: 0.2em;
+  color: darkcyan;
+  border-radius: 5px;
+  border-width: .5px;
+}
